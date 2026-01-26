@@ -2,7 +2,7 @@
   "name": "dolivo-website",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://conallwalsh.github.io/Dolivo_website",
+  "homepage": "https://conallwalsh-dolivo.github.io/dolivo_holding_page_frontend",
   "type": "module",
   "scripts": {
     "dev": "vite",
