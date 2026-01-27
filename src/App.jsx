@@ -42,15 +42,15 @@ function App() {
     <div className="min-h-screen bg-[#F7F7F5]">
       {/* Header */}
       <header className="bg-[#EEEDE9] border-b border-black/10">
-        <div className="max-w-[1200px] mx-auto px-8 h-24 flex items-center justify-between">
-          <a href="#home" className="flex items-center gap-3">
-            <img src="/dolivo_logo.png" alt="Dolivo Logo" className="h-8 w-auto" />
-            <span className="text-2xl font-bold tracking-tight">Dolivo</span>
+        <div className="max-w-[1200px] mx-auto px-8 h-20 flex items-center justify-between">
+          <a href="#home" className="flex items-center gap-2.5">
+            <img src="/dolivo_logo.png" alt="Dolivo Logo" className="h-7 w-auto" />
+            <span className="text-xl font-bold tracking-tight">Dolivo</span>
           </a>
           <nav className="flex items-center gap-8">
-            <a href="#solutions" className="nav-link">Solutions</a>
-            <a href="#company" className="nav-link">Technology</a>
-            <a href="#contact" className="nav-link">Contact</a>
+            <a href="#solutions" className="nav-link text-sm">Solutions</a>
+            <a href="#company" className="nav-link text-sm">Technology</a>
+            <a href="#contact" className="nav-link text-sm">Contact</a>
           </nav>
         </div>
       </header>
