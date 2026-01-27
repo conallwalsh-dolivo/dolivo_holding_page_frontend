@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#F7F7F5]">
       {/* Header */}
-      <header className="bg-white border-b border-black/10">
+      <header className="bg-[#EEEDE9] border-b border-black/10">
         <div className="max-w-[1200px] mx-auto px-8 h-24 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-3">
             <img src="/dolivo_logo.png" alt="Dolivo Logo" className="h-8 w-auto" />
@@ -321,7 +321,7 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-black/10 py-8">
+      <footer className="bg-[#EEEDE9] border-t border-black/10 py-8">
         <div className="max-w-[1200px] mx-auto px-8 text-center">
           <p className="text-sm text-gray-600">&copy; 2026 Dolivo. All rights reserved.</p>
         </div>
