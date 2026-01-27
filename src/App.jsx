@@ -61,9 +61,9 @@ function App() {
           <div className="flex gap-8">
             <div className="flex-1 flex flex-col gap-9 pt-8">
               <div className="flex flex-col">
-                <h1 className="heading-xl">The Operating System</h1>
-                <h1 className="heading-xl">for Grid Engineering</h1>
-                <h1 className="heading-xl">in Utility-Scale</h1>
+                <h1 className="heading-xl">Intelligent</h1> 
+                <h1 className="heading-xl">Grid Engineering</h1> 
+                <h1 className="heading-xl">for Utility-Scale</h1> 
                 <h1 className="heading-xl">Solar.</h1>
               </div>
               <p className="text-2xl font-normal leading-relaxed tracking-wide max-w-[458px]">
