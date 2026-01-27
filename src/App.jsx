@@ -216,7 +216,7 @@ function App() {
             </div>
             
             <p className="body-text-sm mt-3">
-              Site documentation organised into a structured, queryable system
+              Site documentation organised into a structured, queryable system.
   </p>
           </div>
           
@@ -236,7 +236,7 @@ function App() {
             </div>
             
             <p className="body-text-sm mt-3 text-right">
-      Run repeatable financial, technical, operational, and compliance workflows utilising documents, data, and models            </p>
+      Run repeatable financial, technical, operational, and compliance workflows utilising documents, data, and models.            </p>
           </div>
           
           {/* Feature 3 */}
