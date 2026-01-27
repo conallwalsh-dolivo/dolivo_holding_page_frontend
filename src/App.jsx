@@ -44,8 +44,8 @@ function App() {
       <header className="bg-white border-b border-black/10">
         <div className="max-w-[1200px] mx-auto px-8 h-24 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-3">
-            <img src="/dolivo_logo.png" alt="Dolivo Logo" className="h-10 w-auto" />
-            <span className="text-3xl font-extrabold tracking-tight">Dolivo</span>
+            <img src="/dolivo_logo.png" alt="Dolivo Logo" className="h-14 w-auto" />
+            <span className="text-4xl font-extrabold tracking-tight">Dolivo</span>
           </a>
           <nav className="flex items-center gap-8">
             <a href="#solutions" className="nav-link">Solutions</a>
