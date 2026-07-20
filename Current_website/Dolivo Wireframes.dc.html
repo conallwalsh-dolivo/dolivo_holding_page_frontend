@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics="">
+<meta name="design_doc_mode" content="canvas">
+<script src="./image-slot.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&amp;family=Space+Mono:wght@400;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f0eee9;font-family:'Architects Daughter',cursive;color:#1a1a1a}
+.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}
+.dv-tid{font:600 10px 'Space Mono',monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}
+.dv-tname{font:600 14px system-ui,sans-serif;color:#1a1a1a}
+.dv-opts{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}
+.dv-oid{font:600 10.5px 'Space Mono',monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}
+.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 12px system-ui,sans-serif;color:rgba(0,0,0,.55)}
+.dv-card{max-width:100%;background:#fff;border:1.5px solid #1a1a1a;overflow:hidden}
+.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}
+.dv-next{margin:22px 0 0;font:13px system-ui,sans-serif;color:rgba(0,0,0,.5)}
+.wf-sec{border-bottom:1.5px dashed #1a1a1a;padding:14px 16px}
+.wf-sec:last-child{border-bottom:none}
+.wf-label{font:600 11px 'Space Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#2a78d6;margin-bottom:6px}
+.wf-box{border:1.5px dashed rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;font:11px 'Space Mono',monospace;color:rgba(0,0,0,.45);text-align:center;padding:4px}
+.wf-line{height:1.5px;background:rgba(0,0,0,.15);margin:6px 0}
+.wf-btn{border:1.5px solid #1a1a1a;padding:6px 14px;font:13px 'Architects Daughter',cursive;display:inline-block}
+.wf-backedby{font:11px 'Space Mono',monospace;color:rgba(0,0,0,.55);border:1.5px dashed rgba(0,0,0,.4);padding:3px 8px;border-radius:3px;white-space:nowrap}
+.hp-badge{font:12px 'IBM Plex Sans',sans-serif;color:rgba(20,20,18,.55);border:1px solid rgba(20,20,18,.2);padding:5px 12px;border-radius:20px;white-space:nowrap}
+@keyframes hp-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes hp-flick{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</helmet>
+
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Homepage — full build, direction 1a, real copy</span></div>
+<div class="dv-opts">
+<div class="dv-opt" id="2a">
+<div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>Swiss grid, Clara-inspired type &amp; spacing</div>
+<div class="dv-card" style="width:880px;background:#f4f1ea;border:none;font-family:'IBM Plex Sans',sans-serif;color:#171612">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:36px 56px 0">
+    <div style="display:flex;align-items:center;gap:16px">
+      
+      <div style="font:500 34px 'Newsreader',serif;letter-spacing:.01em">DOLIVO</div>
+    </div>
+    <div style="display:flex;gap:40px;align-items:center;font-size:14px;flex-shrink:0">
+      <a href="Dolivo Services.dc.html" style="color:inherit;text-decoration:none;white-space:nowrap;flex-shrink:0">Approach</a>
+      <a href="Dolivo Case Studies.dc.html" style="color:inherit;text-decoration:none;white-space:nowrap;flex-shrink:0">Case Studies</a>
+      <a href="Dolivo About.dc.html" style="color:inherit;text-decoration:none;white-space:nowrap;flex-shrink:0">About</a>
+      <sc-if value="{{ showBackedBy }}"><div class="hp-badge" style="flex-shrink:0;display:flex;align-items:center;gap:6px;overflow:hidden"><span>Backed by</span><span key="{{ backerIdx }}" style="display:inline-block;animation:hp-flick .45s ease;font-weight:500;color:#171612">{{ currentBackerName }}</span></div></sc-if>
+    </div>
+  </div>
+
+  <div style="padding:72px 56px 64px;max-width:760px">
+    
+    <h1 style="font:400 54px/1.15 'Newsreader',serif;margin:0 0 22px;letter-spacing:-.01em">AI-native technical expertise for utility-scale solar &amp; storage</h1>
+    <p style="font-size:17px;line-height:1.6;color:rgba(23,22,18,.72);max-width:600px;margin:0 0 28px">Engineer-led technical review across grid connection, compliance, plant controls and operational performance — for developers, IPPs, asset owners and investors.</p>
+    <div style="display:flex;gap:22px;align-items:center">
+      <div style="background:#171612;color:#f4f1ea;border-radius:20px;padding:12px 26px;font-size:14px">Book an intro call</div>
+      <a href="Dolivo Case Studies.dc.html" style="font-size:14px;text-decoration:underline;text-underline-offset:3px;color:inherit">See case studies →</a>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid rgba(23,22,18,.12);padding:48px 56px">
+    <div style="font:600 11px 'IBM Plex Sans',sans-serif;letter-spacing:.12em;color:rgba(23,22,18,.5);margin-bottom:28px;text-align:center">TRUSTED BY</div>
+    <div style="overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)">
+      <div style="display:flex;width:max-content;gap:80px;animation:hp-marquee 16s linear infinite">
+        <div style="display:flex;gap:80px;align-items:center">
+          <image-slot id="cust-logo-1" shape="rect" style="width:140px;height:44px" placeholder="Logo"></image-slot>
+          <image-slot id="cust-logo-2" shape="rect" style="width:140px;height:44px" placeholder="Logo"></image-slot>
+          <image-slot id="cust-logo-3" shape="rect" style="width:140px;height:44px" placeholder="Logo"></image-slot>
+        </div>
+        <div style="display:flex;gap:80px;align-items:center" aria-hidden="true">
+          <image-slot id="cust-logo-1-dup" shape="rect" style="width:140px;height:44px" placeholder="Logo"></image-slot>
+          <image-slot id="cust-logo-2-dup" shape="rect" style="width:140px;height:44px" placeholder="Logo"></image-slot>
+          <image-slot id="cust-logo-3-dup" shape="rect" style="width:140px;height:44px" placeholder="Logo"></image-slot>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid rgba(23,22,18,.12);padding:48px 56px">
+    <div style="font:600 11px 'IBM Plex Sans',sans-serif;letter-spacing:.12em;color:rgba(23,22,18,.5);margin-bottom:24px">WHAT WE DO</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:40px">
+      <p style="font:400 24px/1.45 'Newsreader',serif;margin:0;max-width:640px">Technical review across the full project lifecycle: development, design, commissioning and operations.</p>
+      <a href="Dolivo Services.dc.html" style="font-size:14px;text-decoration:underline;text-underline-offset:3px;color:inherit;white-space:nowrap">See our approach →</a>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid rgba(23,22,18,.12);padding:48px 56px">
+    <div style="background:#171612;color:#f4f1ea;padding:36px 40px;border-radius:4px;display:flex;gap:40px;align-items:center">
+      <div style="flex:1">
+        <div style="font:600 11px 'IBM Plex Sans',sans-serif;letter-spacing:.12em;color:rgba(244,241,234,.55);margin-bottom:12px">THE DOLIVO PLATFORM</div>
+        <p style="font:400 19px/1.55 'Newsreader',serif;margin:0">Technical expertise used to mean one-off, high-cost consultancy engagements. The Dolivo Platform makes it something you can access on demand, at any project stage.</p>
+      </div>
+      <a href="Dolivo Services.dc.html" style="font-size:13px;color:#f4f1ea;text-decoration:underline;text-underline-offset:3px;white-space:nowrap">How it works →</a>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid rgba(23,22,18,.12);padding:56px;text-align:center">
+    <div style="font:400 30px/1.4 'Newsreader',serif;max-width:560px;margin:0 auto 20px">An initial engagement typically focuses on a single project or operational asset.</div>
+    <p style="font-size:14px;color:rgba(23,22,18,.6);margin:0 0 26px">From there, we work with you to extend the approach across your wider portfolio.</p>
+    <div style="display:flex;gap:16px;justify-content:center;align-items:center">
+      <div style="background:#171612;color:#f4f1ea;border-radius:20px;padding:12px 26px;font-size:14px">Book an intro call</div>
+      <div style="font-size:14px;color:rgba(23,22,18,.6)">conall.walsh@dolivogen.com</div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</section>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Homepage — 3 structural directions</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Swiss Grid — data-forward, credibility via numbers</div>
+<div class="dv-card" style="width:420px">
+  <div class="wf-sec" style="display:flex;justify-content:space-between;align-items:center">
+    <div class="wf-box" style="width:80px;height:24px">LOGO</div>
+    <div style="display:flex;gap:10px;font-size:11px;align-items:center;flex-wrap:wrap;justify-content:flex-end">
+      <span>Approach</span><span>Case Studies</span><span>About</span><span>Contact</span>
+      <sc-if value="{{ showBackedBy }}"><span class="wf-backedby">{{ backedByText }}</span></sc-if>
+    </div>
+  </div>
+  <div class="wf-sec">
+    <div class="wf-label">Hero</div>
+    <div style="font-size:22px;line-height:1.3;max-width:340px">AI-native technical due diligence for utility-scale solar &amp; storage</div>
+    <div class="wf-line" style="width:70%"></div>
+    <div class="wf-line" style="width:50%"></div>
+    <div style="display:flex;gap:10px;margin-top:10px">
+      <div class="wf-btn">Book an intro call</div>
+      <div style="font-size:12px;align-self:center;text-decoration:underline">See our work →</div>
+    </div>
+  </div>
+  <div class="wf-sec">
+    <div class="wf-label">Proof strip — grid of stats</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center">
+      <div><div style="font-size:20px">GW+</div><div style="font-size:10px">assessed</div></div>
+      <div><div style="font-size:20px">50+</div><div style="font-size:10px">projects</div></div>
+      <div><div style="font-size:20px">IE/UK</div><div style="font-size:10px">markets</div></div>
+      <div><div style="font-size:20px">##</div><div style="font-size:10px">clients</div></div>
+    </div>
+  </div>
+  <div class="wf-sec">
+    <div class="wf-label">What we do — 3 col grid, icon led</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+      <div><div class="wf-box" style="height:36px;width:100%">grid conn. icon</div><div class="wf-line"></div></div>
+      <div><div class="wf-box" style="height:36px;width:100%">controls icon</div><div class="wf-line"></div></div>
+      <div><div class="wf-box" style="height:36px;width:100%">commission icon</div><div class="wf-line"></div></div>
+    </div>
+  </div>
+  <div class="wf-sec">
+    <div class="wf-label">Featured case study — single, wide</div>
+    <div style="display:flex;gap:10px">
+      <div class="wf-box" style="width:140px;height:80px">site diagram</div>
+      <div style="flex:1"><div class="wf-line"></div><div class="wf-line" style="width:80%"></div><div style="font-size:11px;color:#2a78d6;margin-top:6px">Read case study →</div></div>
+    </div>
+  </div>
+  <div class="wf-sec">
+    <div class="wf-label">Logos strip — client/partner marks</div>
+    <div style="display:flex;gap:12px">
+      <div class="wf-box" style="width:50px;height:20px">logo</div><div class="wf-box" style="width:50px;height:20px">logo</div><div class="wf-box" style="width:50px;height:20px">logo</div><div class="wf-box" style="width:50px;height:20px">logo</div>
+    </div>
+  </div>
+  <div class="wf-sec" style="text-align:center">
+    <div class="wf-label">Closing CTA</div>
+    <div style="font-size:16px">Talk to our engineering team</div>
+    <div class="wf-btn" style="margin-top:8px">Get in touch</div>
+  </div>
+</div>
+</div>
+
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Narrative Scroll — story-led, illustration-heavy</div>
+<div class="dv-card" style="width:420px">
+  <div class="wf-sec" style="display:flex;justify-content:space-between;align-items:center">
+    <div class="wf-box" style="width:80px;height:24px">LOGO</div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <sc-if value="{{ showBackedBy }}"><span class="wf-backedby">{{ backedByText }}</span></sc-if>
+      <div class="wf-btn" style="font-size:11px;padding:4px 10px">Book a call</div>
+    </div>
+  </div>
+  <div class="wf-sec" style="text-align:center">
+    <div class="wf-label">Hero — full width illustration</div>
+    <div class="wf-box" style="width:100%;height:120px">minimal line illustration — grid/inverter schematic</div>
+    <div style="font-size:20px;margin-top:10px">De-risking solar &amp; storage assets, end to end</div>
+    <div class="wf-line" style="width:60%;margin:8px auto"></div>
+  </div>
+  <div class="wf-sec">
+    <div class="wf-label">Problem framing — 1 col, quiet</div>
+    <div class="wf-line"></div><div class="wf-line" style="width:85%"></div><div class="wf-line" style="width:70%"></div>
+  </div>
+  <div class="wf-sec">
+    <div class="wf-label">Process — vertical timeline</div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="display:flex;gap:10px;align-items:center"><div class="wf-box" style="width:28px;height:28px;border-radius:50%">1</div><div class="wf-line" style="flex:1"></div></div>
+      <div style="display:flex;gap:10px;align-items:center"><div class="wf-box" style="width:28px;height:28px;border-radius:50%">2</div><div class="wf-line" style="flex:1"></div></div>
+      <div style="display:flex;gap:10px;align-items:center"><div class="wf-box" style="width:28px;height:28px;border-radius:50%">3</div><div class="wf-line" style="flex:1"></div></div>
+    </div>
+  </div>
+  <div class="wf-sec">
+    <div class="wf-label">Case study — pull quote led</div>
+    <div style="font-size:15px;font-style:italic">"Quote from client about outcome..."</div>
+    <div style="font-size:11px;margin-top:6px;color:rgba(0,0,0,.5)">— Name, Title, Fund</div>
+  </div>
+  <div class="wf-sec" style="text-align:center">
+    <div class="wf-label">CTA — soft</div>
+    <div style="font-size:16px">Have a project in mind?</div>
+    <div class="wf-btn" style="margin-top:8px">Start a conversation</div>
+  </div>
+</div>
+</div>
+
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Dense Dossier — technical-report feel, dense &amp; credible</div>
+<div class="dv-card" style="width:420px">
+  <div class="wf-sec" style="display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #1a1a1a">
+    <div class="wf-box" style="width:80px;height:24px">LOGO</div>
+    <div style="display:flex;gap:12px;font-size:11px;align-items:center">
+      <span>Product</span><span>Case Studies</span><span>Team</span><span>Contact</span>
+      <sc-if value="{{ showBackedBy }}"><span class="wf-backedby">{{ backedByText }}</span></sc-if>
+    </div>
+  </div>
+  <div class="wf-sec" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+    <div>
+      <div class="wf-label">Hero — left text</div>
+      <div style="font-size:19px;line-height:1.3">Technical due diligence for utility-scale solar &amp; BESS</div>
+      <div class="wf-line" style="width:90%"></div>
+      <div class="wf-btn" style="margin-top:8px;font-size:12px">Request an intro call</div>
+    </div>
+    <div class="wf-box" style="height:130px">annotated site schematic</div>
+  </div>
+  <div class="wf-sec">
+    <div class="wf-label">Services — dense list, 5 rows</div>
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <div style="display:flex;justify-content:space-between;font-size:12px"><span>Grid connection review</span><span>→</span></div>
+      <div style="display:flex;justify-content:space-between;font-size:12px"><span>Power system performance</span><span>→</span></div>
+      <div style="display:flex;justify-content:space-between;font-size:12px"><span>Control systems audit</span><span>→</span></div>
+      <div style="display:flex;justify-content:space-between;font-size:12px"><span>Grid-code compliance</span><span>→</span></div>
+      <div style="display:flex;justify-content:space-between;font-size:12px"><span>Commissioning readiness</span><span>→</span></div>
+    </div>
+  </div>
+  <div class="wf-sec">
+    <div class="wf-label">Case studies — 2up card grid</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div><div class="wf-box" style="height:60px;width:100%">chart</div><div class="wf-line"></div></div>
+      <div><div class="wf-box" style="height:60px;width:100%">chart</div><div class="wf-line"></div></div>
+    </div>
+  </div>
+  <div class="wf-sec">
+    <div class="wf-label">Credentials strip — regions/certs/team stats</div>
+    <div style="display:flex;justify-content:space-between;font-size:11px">
+      <span>Ireland</span><span>UK</span><span>Chartered engineers</span><span>Est. team yrs ##</span>
+    </div>
+  </div>
+  <div class="wf-sec" style="text-align:center">
+    <div class="wf-label">Closing CTA</div>
+    <div class="wf-btn">Get in touch</div>
+  </div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Try next: "expand <a class="dv-oid" href="#1a">1a</a> into the Case Studies and Product pages" · "combine hero of <a class="dv-oid" href="#1c">1c</a> with process section of <a class="dv-oid" href="#1b">1b</a>" · "share your Pinterest board / logo / deck and I'll refine toward that look"</p>
+</section>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showBackedBy&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;backedByNames&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Investor One, Investor Two, Investor Three&quot;,&quot;tsType&quot;:&quot;string&quot;}}">class Component extends DCLogic {
+  state = { backerIdx: 0 };
+  componentDidMount() {
+    this._backerTimer = setInterval(() => {
+      this.setState(s => ({ backerIdx: s.backerIdx + 1 }));
+    }, 2800);
+  }
+  componentWillUnmount() {
+    clearInterval(this._backerTimer);
+  }
+  renderVals() {
+    const raw = this.props.backedByNames ?? "Investor One, Investor Two, Investor Three";
+    const names = raw.split(",").map(s => s.trim()).filter(Boolean);
+    const idx = names.length ? this.state.backerIdx % names.length : 0;
+    return {
+      showBackedBy: this.props.showBackedBy ?? true,
+      backerIdx: idx,
+      currentBackerName: names[idx] || "",
+      backedByText: "Backed by " + (names[idx] || "")
+    };
+  }
+}</script>
+</body>
+</html>

@@ -1,24 +1,10 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Dependencies / build output
+node_modules/
+dist/
 
-node_modules
-dist
-dist-ssr
-*.local
+# Local dated backup of the previous React site (kept out of git; superseded by Current_website/)
+Old_website_20_07_2026/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS / editor cruft
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
